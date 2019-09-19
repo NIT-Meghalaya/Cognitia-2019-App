@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
         menuItem.isChecked = true
+        navigationView.setCheckedItem(menuItem.itemId)
         drawerLayout.closeDrawers()
 
         when(menuItem.itemId) {

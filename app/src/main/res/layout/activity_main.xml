@@ -10,9 +10,10 @@
     android:fitsSystemWindows="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".screens.MainActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.MainActivity"
+        android:backgroundTint="@color/white">
 
         <include
             android:id="@+id/toolbar"
@@ -37,6 +38,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        android:backgroundTint="@color/white"
+        app:itemTextColor="@color/black"
         app:headerLayout="@layout/nav_header_layout"
         app:menu="@menu/navigation_drawer_menu" />
 
