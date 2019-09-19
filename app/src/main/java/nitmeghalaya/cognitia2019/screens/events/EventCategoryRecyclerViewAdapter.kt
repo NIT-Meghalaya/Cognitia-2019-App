@@ -1,4 +1,4 @@
-package nitmeghalaya.cognitia2019.events
+package nitmeghalaya.cognitia2019.screens.events
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

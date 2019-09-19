@@ -8,7 +8,7 @@
     app:startDestination="@id/eventsFragment">
 
     <fragment android:id="@+id/eventsFragment"
-        android:name="nitmeghalaya.cognitia2019.events.EventCategoriesFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.events.EventCategoriesFragment"
         android:label="fragment_event_list"
         tools:layout="@layout/fragment_events"/>
 </navigation>

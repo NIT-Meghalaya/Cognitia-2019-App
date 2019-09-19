@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".splash.SplashScreenActivity"
+            android:name="nitmeghalaya.cognitia2019.screens.splash.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" android:theme="@style/AppTheme">
+        <activity android:name=".screens.MainActivity" android:theme="@style/AppTheme">
         </activity>
     </application>
 

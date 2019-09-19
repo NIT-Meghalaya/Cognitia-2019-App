@@ -1,4 +1,4 @@
-package nitmeghalaya.cognitia2019
+package nitmeghalaya.cognitia2019.screens
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,6 +10,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import nitmeghalaya.cognitia2019.R
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

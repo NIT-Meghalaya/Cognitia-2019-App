@@ -1,4 +1,4 @@
-package nitmeghalaya.cognitia2019.events
+package nitmeghalaya.cognitia2019.screens.events
 
 import androidx.lifecycle.ViewModel
 import nitmeghalaya.cognitia2019.model.EventCategory

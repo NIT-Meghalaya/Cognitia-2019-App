@@ -1,10 +1,10 @@
-package nitmeghalaya.cognitia2019.splash
+package nitmeghalaya.cognitia2019.screens.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import nitmeghalaya.cognitia2019.MainActivity
+import nitmeghalaya.cognitia2019.screens.MainActivity
 import nitmeghalaya.cognitia2019.R
 
 class SplashScreenActivity : AppCompatActivity() {

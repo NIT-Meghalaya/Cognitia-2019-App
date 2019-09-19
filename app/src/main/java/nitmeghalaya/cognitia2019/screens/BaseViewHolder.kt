@@ -1,4 +1,4 @@
-package nitmeghalaya.cognitia2019
+package nitmeghalaya.cognitia2019.screens
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
