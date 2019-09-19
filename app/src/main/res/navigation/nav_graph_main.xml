@@ -5,10 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/eventsFragment">
+    app:startDestination="@id/eventCategoriesFragment">
 
-    <fragment android:id="@+id/eventsFragment"
-        android:name="nitmeghalaya.cognitia2019.screens.events.EventCategoriesFragment"
-        android:label="fragment_event_list"
-        tools:layout="@layout/fragment_events"/>
+    <fragment
+        android:id="@+id/eventCategoriesFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.eventcategories.EventCategoriesFragment"
+        android:label="fragment_event_categories"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventCategoriesFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.events.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events2" >
+        <argument
+            android:name="eventsCategory"
+            app:argType="string" />
+    </fragment>
 </navigation>

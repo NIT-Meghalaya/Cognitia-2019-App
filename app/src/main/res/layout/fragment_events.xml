@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".screens.events.EventCategoriesFragment"
+    tools:context=".screens.eventcategories.EventCategoriesFragment"
     android:background="@color/white">
 
     <androidx.recyclerview.widget.RecyclerView

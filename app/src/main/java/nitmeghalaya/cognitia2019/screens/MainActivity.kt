@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         when(menuItem.itemId) {
             R.id.events -> {
-                navController.navigate(R.id.eventsFragment)
+                navController.navigate(R.id.eventCategoriesFragment)
             }
         }
 
