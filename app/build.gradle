@@ -20,11 +20,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
 
     def nav_version = '2.1.0'
+    def lifecycle_version = "2.1.0"
+    def koin_version = '2.0.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -45,7 +56,18 @@ dependencies {
     //Lottie
     implementation 'com.airbnb.android:lottie:3.0.7'
 
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //Coil Image Loading Lib.
+    implementation "io.coil-kt:coil:0.7.0"
+
+    //Intuit SDP
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //Koin Core for Kotlin
+    implementation "org.koin:koin-core:$koin_version"
+
+    //Koin AndroidX ViewModel features
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 }
