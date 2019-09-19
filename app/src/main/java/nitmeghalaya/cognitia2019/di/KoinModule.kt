@@ -1,3 +1,4 @@
+import nitmeghalaya.cognitia2019.screens.cognitiaevents.CognitiaEventsViewModel
 import nitmeghalaya.cognitia2019.screens.eventcategories.EventCategoriesViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -8,4 +9,5 @@ import org.koin.dsl.module
 
 val appModule = module {
     viewModel { EventCategoriesViewModel() }
+    viewModel { CognitiaEventsViewModel() }
 }

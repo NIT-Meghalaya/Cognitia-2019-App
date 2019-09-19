@@ -11,16 +11,16 @@
         android:id="@+id/eventCategoriesFragment"
         android:name="nitmeghalaya.cognitia2019.screens.eventcategories.EventCategoriesFragment"
         android:label="fragment_event_categories"
-        tools:layout="@layout/fragment_events" >
+        tools:layout="@layout/fragment_event_categories" >
         <action
             android:id="@+id/action_eventCategoriesFragment_to_eventsFragment"
             app:destination="@id/eventsFragment" />
     </fragment>
     <fragment
         android:id="@+id/eventsFragment"
-        android:name="nitmeghalaya.cognitia2019.screens.events.EventsFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.cognitiaevents.CognitiaEventsFragment"
         android:label="fragment_events"
-        tools:layout="@layout/fragment_events2" >
+        tools:layout="@layout/fragment_cognitia_events" >
         <argument
             android:name="eventsCategory"
             app:argType="string" />

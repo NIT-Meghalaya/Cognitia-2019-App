@@ -7,4 +7,6 @@
     <string name="schedule">Schedule</string>
     <string name="sponsors">Sponsors</string>
     <string name="contact">Contact</string>
+    <string name="action_share">Share</string>
+    <string name="action_explore">Explore</string>
 </resources>
