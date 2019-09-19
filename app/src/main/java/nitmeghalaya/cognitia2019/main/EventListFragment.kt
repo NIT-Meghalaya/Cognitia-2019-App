@@ -2,11 +2,10 @@ package nitmeghalaya.cognitia2019.main
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.fragment.app.Fragment
 import nitmeghalaya.cognitia2019.R
 
 class EventListFragment : Fragment() {
