@@ -11,11 +11,6 @@ import nitmeghalaya.cognitia2019.repository.FirestoreRepository
 class CognitiaEventsViewModel(private val firestoreRepository: FirestoreRepository): ViewModel() {
 
     fun getCognitiaEventList(categoryName: String): LiveData<ArrayList<CognitiaEvent>> {
-//        val cognitiaEvents = arrayListOf<CognitiaEvent>()
-//
-//        cognitiaEvents.add(CognitiaEvent("Wonderful world", "Best event", "Awesome"))
-//
-//        return cognitiaEvents
         val eventsLiveData = MutableLiveData<ArrayList<CognitiaEvent>>()
 
         firestoreRepository.getEventsList(categoryName)

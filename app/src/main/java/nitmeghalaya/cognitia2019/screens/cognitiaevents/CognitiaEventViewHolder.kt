@@ -14,7 +14,11 @@ class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: 
 
     override fun bind(item: CognitiaEvent) {
         itemView.apply {
-            imageView.load(item.image)
+            imageView.load(item.image) {
+                placeholder(R.drawable.cognitia_logo)
+                crossfade(true)
+                crossfade(500)
+            }
             nameTV.text = item.name
             descriptionTV.text = item.about
         }
