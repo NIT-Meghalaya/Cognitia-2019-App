@@ -72,4 +72,7 @@ dependencies {
 
     //Koin AndroidX ViewModel features
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
 }

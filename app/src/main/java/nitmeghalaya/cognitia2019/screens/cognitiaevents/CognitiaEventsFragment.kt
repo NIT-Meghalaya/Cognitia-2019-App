@@ -22,6 +22,7 @@ class CognitiaEventsFragment : BaseFragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_cognitia_events, container, false)
 
+        setActionbarTitle(args.eventsCategory)
         view.recyclerView.adapter = CognitiaEventsRecyclerViewAdapter(viewModel.getCognitiaEventList())
 
         return view
