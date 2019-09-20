@@ -36,5 +36,8 @@
             android:name="event"
             app:argType="string"
             android:defaultValue='""' />
+        <argument
+            android:name="eventName"
+            app:argType="string" />
     </fragment>
 </navigation>

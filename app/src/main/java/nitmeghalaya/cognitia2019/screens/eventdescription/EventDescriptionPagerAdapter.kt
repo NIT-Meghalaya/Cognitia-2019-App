@@ -33,4 +33,13 @@ class EventDescriptionPagerAdapter(cognitiaEventJson: String, fm: FragmentManage
                 TECHNICAL -> 4
                 else -> 3
             }
+
+    override fun getPageTitle(position: Int): CharSequence? =
+        when(position) {
+            0 -> "Description"
+            1 -> "Rules"
+            2 -> if(cognitiaEvent.category == TECHNICAL) "Robot Specs" else "Team"
+            3 -> "Team"
+            else -> ""
+        }
 }

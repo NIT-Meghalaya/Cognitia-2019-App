@@ -35,7 +35,7 @@ class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: 
 
     private fun navigateToEventDetails(view: View, item: CognitiaEvent) {
         val action = CognitiaEventsFragmentDirections
-            .actionEventsFragmentToEventDetailFragment(item.toJson<CognitiaEvent>())
+            .actionEventsFragmentToEventDetailFragment(item.toJson<CognitiaEvent>(), item.name)
         view.findNavController().navigate(action)
         baseFragment.hideActionBar()
     }

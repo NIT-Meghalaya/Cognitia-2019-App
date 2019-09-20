@@ -19,8 +19,13 @@ class EventDetailFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_event_detail, container, false)
 
-        view.viewPager.adapter = EventDescriptionPagerAdapter(args.event, childFragmentManager)
+        view.apply {
+            viewPager.adapter = EventDescriptionPagerAdapter(args.event, childFragmentManager)
+            tabLayout.setupWithViewPager(viewPager)
 
+            collapsingToolbar.isTitleEnabled = true
+            toolbar.title = args.eventName
+        }
         return view
     }
 
