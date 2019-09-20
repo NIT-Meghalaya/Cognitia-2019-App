@@ -24,6 +24,24 @@
         <argument
             android:name="eventsCategory"
             app:argType="string" />
+        <action
+            android:id="@+id/action_eventsFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.eventdescription.EventDetailFragment"
+        android:label="EventDetailFragment" >
+        <argument
+            android:name="event"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="eventName"
+            app:argType="string" />
+        <argument
+            android:name="eventImage"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/teamMembersFragment"

@@ -50,4 +50,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         return true
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        if (supportActionBar?.isShowing != true)
+            supportActionBar?.show()
+    }
 }
