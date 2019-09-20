@@ -75,6 +75,9 @@ dependencies {
     //Koin AndroidX ViewModel features
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 
+    //Carousel LayoutManager for Recycler View
+    implementation 'com.azoft.carousellayoutmanager:carousel:1.2.4'
+
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
 
