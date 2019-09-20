@@ -25,4 +25,9 @@
             android:name="eventsCategory"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/teamMembersFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.teammembers.TeamMembersFragment"
+        android:label="fragment_team_members"
+        tools:layout="@layout/fragment_team_members" />
 </navigation>
