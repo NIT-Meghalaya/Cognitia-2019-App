@@ -2,6 +2,7 @@ package nitmeghalaya.cognitia2019
 
 import android.app.Application
 import appModule
+import firestoreRepositoryModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -12,7 +13,7 @@ class CognitiaApplication: Application() {
 
         startKoin {
             androidContext(this@CognitiaApplication)
-            modules(listOf(appModule))
+            modules(listOf(appModule, firestoreRepositoryModule))
         }
     }
 }

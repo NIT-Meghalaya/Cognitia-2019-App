@@ -81,6 +81,6 @@ dependencies {
     //Firebase Analytics
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
 
-    //Firestore
-    implementation 'com.google.firebase:firebase-firestore:21.1.1'
+    //Firestore KTX
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.1.1'
 }
