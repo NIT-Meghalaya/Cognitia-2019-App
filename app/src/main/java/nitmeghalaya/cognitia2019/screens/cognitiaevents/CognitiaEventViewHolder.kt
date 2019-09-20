@@ -6,9 +6,11 @@ import coil.api.load
 import kotlinx.android.synthetic.main.item_cognitia_event.view.*
 import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.model.CognitiaEvent
+import nitmeghalaya.cognitia2019.screens.BaseFragment
 import nitmeghalaya.cognitia2019.screens.BaseViewHolder
 
-class CognitiaEventViewHolder(itemView: View): BaseViewHolder<CognitiaEvent>(itemView) {
+class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: View)
+    : BaseViewHolder<CognitiaEvent>(itemView) {
 
     override fun bind(item: CognitiaEvent) {
         itemView.apply {
@@ -28,5 +30,6 @@ class CognitiaEventViewHolder(itemView: View): BaseViewHolder<CognitiaEvent>(ite
 
     private fun navigateToEventDetails(view: View) {
         view.findNavController().navigate(R.id.action_eventsFragment_to_eventDetailFragment)
+        baseFragment.hideActionBar()
     }
 }
