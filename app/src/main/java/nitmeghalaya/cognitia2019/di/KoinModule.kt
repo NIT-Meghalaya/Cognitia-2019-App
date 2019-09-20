@@ -14,5 +14,5 @@ val firestoreRepositoryModule = module {
 
 val appModule = module {
     viewModel { EventCategoriesViewModel() }
-    viewModel { CognitiaEventsViewModel() }
+    viewModel { CognitiaEventsViewModel(get()) }
 }

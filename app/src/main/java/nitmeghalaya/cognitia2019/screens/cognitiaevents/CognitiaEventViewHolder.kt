@@ -16,7 +16,7 @@ class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: 
         itemView.apply {
             imageView.load(item.image)
             nameTV.text = item.name
-            descriptionTV.text = item.description
+            descriptionTV.text = item.about
         }
 
         itemView.setOnClickListener {

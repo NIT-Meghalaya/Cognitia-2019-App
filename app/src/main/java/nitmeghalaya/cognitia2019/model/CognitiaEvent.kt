@@ -1,7 +1,5 @@
 package nitmeghalaya.cognitia2019.model
 
-import nitmeghalaya.cognitia2019.R
-
 data class CognitiaEvent(
     val name: String = "",
     val description: String = "",
@@ -9,8 +7,8 @@ data class CognitiaEvent(
     val rules: String = "",
     val robotSpecs: String = "",
     val teamGuidelines: String = "",
-    val category: Int = 1,
-    val image: Int = R.drawable.technical,
+    val category: String = "1",
+    val image: String = "",
     val team: String = ""
 ) {
     companion object {
