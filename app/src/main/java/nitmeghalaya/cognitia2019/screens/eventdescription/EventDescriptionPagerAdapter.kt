@@ -4,10 +4,13 @@ import TECHNICAL
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.google.gson.Gson
 import nitmeghalaya.cognitia2019.model.CognitiaEvent
 
-class EventDescriptionPagerAdapter(private val cognitiaEvent: CognitiaEvent, fm: FragmentManager)
+class EventDescriptionPagerAdapter(cognitiaEventJson: String, fm: FragmentManager)
     : FragmentPagerAdapter(fm) {
+
+    private val cognitiaEvent = Gson().fromJson(cognitiaEventJson, CognitiaEvent::class.java)
 
     override fun getItem(position: Int): Fragment =
         when(position) {

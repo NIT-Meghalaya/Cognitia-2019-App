@@ -31,5 +31,10 @@
     <fragment
         android:id="@+id/eventDetailFragment"
         android:name="nitmeghalaya.cognitia2019.screens.eventdescription.EventDetailFragment"
-        android:label="EventDetailFragment" />
+        android:label="EventDetailFragment" >
+        <argument
+            android:name="event"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
 </navigation>

@@ -8,6 +8,7 @@ import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.model.CognitiaEvent
 import nitmeghalaya.cognitia2019.screens.BaseFragment
 import nitmeghalaya.cognitia2019.screens.BaseViewHolder
+import toJson
 
 class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: View)
     : BaseViewHolder<CognitiaEvent>(itemView) {
@@ -24,16 +25,18 @@ class CognitiaEventViewHolder(private val baseFragment: BaseFragment, itemView: 
         }
 
         itemView.setOnClickListener {
-            navigateToEventDetails(it)
+            navigateToEventDetails(it, item)
         }
 
         itemView.buttonExplore.setOnClickListener {
-            navigateToEventDetails(it)
+            navigateToEventDetails(it, item)
         }
     }
 
-    private fun navigateToEventDetails(view: View) {
-        view.findNavController().navigate(R.id.action_eventsFragment_to_eventDetailFragment)
+    private fun navigateToEventDetails(view: View, item: CognitiaEvent) {
+        val action = CognitiaEventsFragmentDirections
+            .actionEventsFragmentToEventDetailFragment(item.toJson<CognitiaEvent>())
+        view.findNavController().navigate(action)
         baseFragment.hideActionBar()
     }
 }
