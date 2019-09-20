@@ -17,10 +17,11 @@
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="256dp"
+            android:layout_height="@dimen/_200sdp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="@color/white"
-            app:expandedTitleMarginBottom="@dimen/_50sdp"
+            app:expandedTitleMarginBottom="@dimen/_60sdp"
+            app:expandedTitleMarginStart="@dimen/_10sdp"
             android:id="@+id/collapsingToolbar">
 
             <ImageView

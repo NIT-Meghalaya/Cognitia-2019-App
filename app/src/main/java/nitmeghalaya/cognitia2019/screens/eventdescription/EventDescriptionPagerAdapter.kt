@@ -18,7 +18,7 @@ class EventDescriptionPagerAdapter(cognitiaEventJson: String, fm: FragmentManage
             1 -> EventDetailItemFragment.newInstance(CognitiaEvent.RULES, cognitiaEvent.rules)
             2 -> {
                 if(cognitiaEvent.category == TECHNICAL) {
-                    EventDetailItemFragment.newInstance(CognitiaEvent.ROBOT_SPECIFICATIONS, cognitiaEvent.robotSpecs)
+                    EventDetailItemFragment.newInstance(CognitiaEvent.ROBOT_SPECIFICATIONS, cognitiaEvent.robotspecs)
                 } else {
                     EventDetailTeamFragment.newInstance(cognitiaEvent.team)
                 }

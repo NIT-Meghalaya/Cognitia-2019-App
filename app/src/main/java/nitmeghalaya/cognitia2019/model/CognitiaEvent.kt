@@ -5,8 +5,8 @@ data class CognitiaEvent(
     val description: String = "",
     val about: String = "",
     val rules: String = "",
-    val robotSpecs: String = "",
-    val teamGuidelines: String = "",
+    val robotspecs: String = "",
+    val teamguidelines: String = "",
     val category: String = "1",
     val image: String = "",
     val team: String = ""
