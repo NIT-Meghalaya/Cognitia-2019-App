@@ -12,12 +12,18 @@
             android:title="@string/schedule"/>
 
         <item
+            android:id="@+id/team"
+            android:title="@string/team"/>
+
+        <item
             android:id="@+id/sponsors"
             android:title="@string/sponsors"/>
 
         <item
             android:id="@+id/contact"
             android:title="@string/contact"/>
+
+
 
     </group>
 </menu>
