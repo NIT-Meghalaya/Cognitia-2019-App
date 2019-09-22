@@ -19,4 +19,10 @@
         <item name="android:textColorSecondary">@color/colorPrimary</item>
     </style>
 
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabBackground">@color/darkWhite</item>
+    </style>
+
 </resources>
