@@ -3,6 +3,7 @@ import nitmeghalaya.cognitia2019.screens.cognitiaevents.CognitiaEventsViewModel
 import nitmeghalaya.cognitia2019.screens.eventcategories.EventCategoriesViewModel
 import nitmeghalaya.cognitia2019.screens.eventdescription.team.EventDetailTeamViewModel
 import nitmeghalaya.cognitia2019.screens.schedule.ScheduleViewModel
+import nitmeghalaya.cognitia2019.screens.team.TeamsViewModel
 import nitmeghalaya.cognitia2019.screens.teammembers.TeamMembersViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -21,4 +22,5 @@ val appModule = module {
     viewModel { CognitiaEventsViewModel(get()) }
     viewModel { EventDetailTeamViewModel(get()) }
     viewModel { ScheduleViewModel() }
+    viewModel { TeamsViewModel(get()) }
 }

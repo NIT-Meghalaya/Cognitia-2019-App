@@ -13,4 +13,6 @@ class FirestoreRepository {
     fun getEventsList(categoryName: String) = db.collection(EVENTS).document(categoryName).get()
 
     fun getTeamMembers(teamName: String) = db.collection(TEAMS).document("App Development").get()
+
+    fun getTeams() = db.collection(TEAMS).get()
 }

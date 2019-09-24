@@ -58,4 +58,8 @@
         android:name="nitmeghalaya.cognitia2019.screens.contactus.ContactUsFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/teamsFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.team.TeamsFragment"
+        android:label="TeamsFragment" />
 </navigation>
