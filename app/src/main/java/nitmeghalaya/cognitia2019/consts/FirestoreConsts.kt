@@ -3,3 +3,4 @@
  */
 
 val EVENTS = "events"
+val TEAMS = "Teams"

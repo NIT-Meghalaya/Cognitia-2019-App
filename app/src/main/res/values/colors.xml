@@ -11,4 +11,5 @@
     <color name="transparent">#00000000</color>
 
     <color name="buttonBackground">#C8E6C9</color>
+    <color name="imageShadowColor">#7080A0</color>
 </resources>

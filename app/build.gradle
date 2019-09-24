@@ -86,4 +86,6 @@ dependencies {
 
     //Firestore KTX
     implementation 'com.google.firebase:firebase-firestore-ktx:21.1.1'
+
+    implementation 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
 }

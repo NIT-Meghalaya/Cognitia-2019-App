@@ -18,8 +18,9 @@ class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) 
             imageView.load(item.image) {
                 transformations(RoundedCornersTransformation(dipToPixels(context,4)))
             }
-            nametV.text = """${item.name} (${item.email})"""
-            emailTV.text = item.team
+            nameTV.text = item.name
+            postTV.text = item.position
+            emailTV.text = item.email
         }
     }
 
