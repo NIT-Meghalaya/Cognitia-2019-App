@@ -56,6 +56,6 @@
     <fragment
         android:id="@+id/contactUsFragment"
         android:name="nitmeghalaya.cognitia2019.screens.contactus.ContactUsFragment"
-        android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" />
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
 </navigation>
