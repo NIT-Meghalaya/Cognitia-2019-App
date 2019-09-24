@@ -46,6 +46,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.team -> {
                 navController.navigate(R.id.teamMembersFragment)
             }
+            R.id.contact ->{
+                navController.navigate(R.id.contactUsFragment)
+            }
         }
 
         return true
