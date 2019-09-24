@@ -15,11 +15,11 @@ class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) 
 
     override fun bind(item: TeamMember) {
         itemView.apply {
-            imageView.load("https://avatars2.githubusercontent.com/u/36022788?s=460&v=4") {
+            imageView.load(item.image) {
                 transformations(RoundedCornersTransformation(dipToPixels(context,4)))
             }
             nametV.text = """${item.name} (${item.email})"""
-            emailTV.text = item.email
+            emailTV.text = item.team
         }
     }
 

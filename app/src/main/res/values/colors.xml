@@ -6,6 +6,8 @@
 
     <color name="black">@android:color/black</color>
     <color name="white">#FFF</color>
+    <color name="darkWhite">#fafafa</color>
+    <color name="darkerWhite">#bfbfbf</color>
     <color name="transparent">#00000000</color>
 
     <color name="buttonBackground">#C8E6C9</color>

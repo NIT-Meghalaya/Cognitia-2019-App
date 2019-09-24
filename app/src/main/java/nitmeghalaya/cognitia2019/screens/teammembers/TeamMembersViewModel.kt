@@ -10,17 +10,32 @@ class TeamMembersViewModel : ViewModel() {
 
         teamMembers.add(
             TeamMember(
-                "Devansh Maurya", "Web & App"
+                "Devansh Maurya",
+                "xyz",
+                "https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/DevanshApp.jpg?alt=media&token=739eea03-de80-448c-a679-ac92ebb70cf4",
+                "Web & App"
             )
         )
         teamMembers.add(
-            TeamMember("Laribok Syiemlieh", "Web & App")
+            TeamMember("Laribok Syiemlieh",
+                "xyz",
+                "https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/laribok.jpg?alt=media&token=e0fac04f-2c5e-4128-b507-fe823ae02843",
+                "Web & App"
+            )
         )
         teamMembers.add(
-            TeamMember("Hemant", "Web & App")
+            TeamMember("Hemant",
+                "xyz",
+                "https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/hemantApp.jpg?alt=media&token=a841e1d0-4624-431d-ad8e-ccb8ca6f615e",
+                "Web & App"
+            )
         )
         teamMembers.add(
-            TeamMember("Pankaj", "Web & App")
+            TeamMember("Pankaj",
+                "xyz",
+                "https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/pankaj.jpg?alt=media&token=eb3cee5c-fff9-4bef-89fb-9629b06f936c",
+                "Web & App"
+            )
         )
 
         return teamMembers

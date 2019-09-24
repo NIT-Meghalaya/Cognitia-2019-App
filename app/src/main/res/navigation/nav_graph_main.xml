@@ -49,6 +49,11 @@
         android:label="fragment_team_members"
         tools:layout="@layout/fragment_team_members" />
     <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
         android:id="@+id/contactUsFragment"
         android:name="nitmeghalaya.cognitia2019.screens.contactus.ContactUsFragment"
         android:label="fragment_blank"
