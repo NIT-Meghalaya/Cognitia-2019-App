@@ -19,7 +19,7 @@ class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) 
                 transformations(RoundedCornersTransformation(dipToPixels(context,4)))
             }
             nameTV.text = item.name
-            postTV.text = item.team
+            postTV.text = item.position
             emailTV.text = item.email
         }
     }

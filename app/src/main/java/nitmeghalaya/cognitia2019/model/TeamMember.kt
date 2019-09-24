@@ -4,5 +4,5 @@ data class TeamMember(
     val name: String = "",
     val email: String = "",
     val image: String = "",
-    val team: String = ""
+    var position: String = ""
 )
