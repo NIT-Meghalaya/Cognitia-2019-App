@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setupActionBarWithNavController(navController, drawerLayout)
         NavigationUI.setupWithNavController(navigationView, navController)
         navigationView.setNavigationItemSelectedListener(this)
+        navigationView.setCheckedItem(R.id.eventsFragment)
     }
 
     override fun onSupportNavigateUp(): Boolean =

@@ -17,6 +17,6 @@ class EventDetailTeamRecyclerViewAdapter(private val teamMembers: ArrayList<Team
     override fun getItemCount() = teamMembers.size
 
     override fun onBindViewHolder(holder: EventDetailTeamViewHolder, position: Int) {
-     holder.bind(teamMembers[position])
+        holder.bind(teamMembers[position])
     }
 }

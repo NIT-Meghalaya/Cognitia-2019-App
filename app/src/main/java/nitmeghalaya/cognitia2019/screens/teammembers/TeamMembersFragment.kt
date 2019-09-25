@@ -13,7 +13,6 @@ import nitmeghalaya.cognitia2019.model.TeamMember
 import nitmeghalaya.cognitia2019.screens.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 class TeamMembersFragment : BaseFragment() {
 
     private val viewModel: TeamMembersViewModel by viewModel()
