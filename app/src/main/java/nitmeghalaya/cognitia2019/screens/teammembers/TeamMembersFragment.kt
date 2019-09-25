@@ -5,12 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
-import com.azoft.carousellayoutmanager.CarouselLayoutManager
-import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener
 import com.yarolegovich.discretescrollview.transform.Pivot
 import com.yarolegovich.discretescrollview.transform.ScaleTransformer
 import kotlinx.android.synthetic.main.fragment_team_members.view.*
 import nitmeghalaya.cognitia2019.R
+import nitmeghalaya.cognitia2019.model.TeamMember
 import nitmeghalaya.cognitia2019.screens.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -29,20 +28,20 @@ class TeamMembersFragment : BaseFragment() {
 
         setActionbarTitle(viewModel.getTeamName(args.teamJson))
 
-        val layoutManager = CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,false)
-        layoutManager.setPostLayoutListener(CarouselZoomPostLayoutListener())
+        val teamMembers = viewModel.getTeamMembersList(args.teamJson)
+
         view.apply {
             discreteScrollView.apply {
                 setHasFixedSize(true)
-                adapter = TeamMemberRecyclerViewAdapter(viewModel.getTeamMembersList(args.teamJson))
+                adapter = TeamMemberRecyclerViewAdapter(teamMembers)
                 setOverScrollEnabled(true)
 
                 setItemTransformer(
                     ScaleTransformer.Builder()
                         .setMaxScale(1.05f)
                         .setMinScale(0.8f)
-                        .setPivotX(Pivot.X.CENTER) // CENTER is a default one
-                        .setPivotY(Pivot.Y.BOTTOM) // CENTER is a default one
+                        .setPivotX(Pivot.X.CENTER)
+                        .setPivotY(Pivot.Y.BOTTOM)
                         .build()
                 )
 
@@ -51,6 +50,16 @@ class TeamMembersFragment : BaseFragment() {
             }
         }
 
+        addDataForFirstMemberItem(view, teamMembers[0])
+
         return view
+    }
+
+    private fun addDataForFirstMemberItem(view: View, memberData: TeamMember) {
+        view.apply {
+            nameTV.text = memberData.name
+            postTV.text = memberData.position
+            emailTV.text = memberData.email
+        }
     }
 }

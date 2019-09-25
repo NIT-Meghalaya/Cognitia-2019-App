@@ -30,6 +30,5 @@ class TeamMembersScrollStateChangedListener(
     }
 
     override fun onScrollStart(p0: TeamMemberViewHolder, p1: Int) {
-
     }
 }
