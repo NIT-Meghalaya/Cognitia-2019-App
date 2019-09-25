@@ -47,7 +47,11 @@
         android:id="@+id/teamMembersFragment"
         android:name="nitmeghalaya.cognitia2019.screens.teammembers.TeamMembersFragment"
         android:label="fragment_team_members"
-        tools:layout="@layout/fragment_team_members" />
+        tools:layout="@layout/fragment_team_members" >
+        <argument
+            android:name="teamJson"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/scheduleFragment"
         android:name="nitmeghalaya.cognitia2019.screens.schedule.ScheduleFragment"
@@ -58,6 +62,14 @@
         android:name="nitmeghalaya.cognitia2019.screens.contactus.ContactUsFragment"
         android:label="fragment_contact_us"
         tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/teamsFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.team.TeamsFragment"
+        android:label="TeamsFragment" >
+        <action
+            android:id="@+id/action_teamsFragment_to_teamMembersFragment"
+            app:destination="@+id/teamMembersFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sponsorFragment"
         android:name="nitmeghalaya.cognitia2019.screens.sponsors.SponsorFragment"

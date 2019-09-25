@@ -1,49 +1,52 @@
 package nitmeghalaya.cognitia2019.screens.teammembers
 
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.firebase.firestore.ktx.toObject
+import com.google.gson.Gson
 import nitmeghalaya.cognitia2019.model.CognitiaTeam
 import nitmeghalaya.cognitia2019.model.TeamMember
-import nitmeghalaya.cognitia2019.repository.FirestoreRepository
 
-class TeamMembersViewModel(private val firestoreRepository: FirestoreRepository) : ViewModel() {
+class TeamMembersViewModel : ViewModel() {
 
-    fun getTeamMembers(): LiveData<ArrayList<TeamMember>> {
-        val teamMembersLiveData = MutableLiveData<ArrayList<TeamMember>>()
+    private var cognitiaTeam: CognitiaTeam? = null
 
-        firestoreRepository.getTeamMembers("")
-            .addOnSuccessListener {
-                val team = it.toObject<CognitiaTeam>() ?: CognitiaTeam()
+    fun getTeamMembersList(teamJson: String): ArrayList<TeamMember> {
+        val teamMembers = arrayListOf<TeamMember>()
 
-                team.coordinators.forEach {
-                    it.position = "Coordinator"
-                }
+        if (cognitiaTeam == null) {
+            cognitiaTeam = getCognitiaTeamFromJson(teamJson)
+        }
 
-                team.cocoordinators.forEach {
-                    it.position = "Co-coordinator"
-                }
-
-                team.members.forEach {
-                    it.position = "Member"
-                }
-
-                teamMembersLiveData.value = arrayListOf()
-
-                teamMembersLiveData.value?.apply {
-                    addAll(team.coordinators)
-                    addAll(team.cocoordinators)
-                    addAll(team.members)
-                }
-
-                teamMembersLiveData.value = teamMembersLiveData.value
-            }
-            .addOnFailureListener {
-                Log.e("Team Members", "Failed to get")
+        cognitiaTeam?.apply {
+            coordinators.forEach {
+                it.position = "Coordinator"
             }
 
-        return teamMembersLiveData
+            cocoordinators.forEach {
+                it.position = "Co-coordinator"
+            }
+
+            members.forEach {
+                it.position = "Member"
+            }
+
+            teamMembers.apply {
+                addAll(coordinators)
+                addAll(cocoordinators)
+                addAll(members)
+            }
+        }
+
+        return teamMembers
     }
+
+    fun getTeamName(teamJson: String): String {
+        if (cognitiaTeam == null) {
+            cognitiaTeam = Gson().fromJson(teamJson, CognitiaTeam::class.java)
+        }
+
+        return cognitiaTeam?.team ?: ""
+    }
+
+    private fun getCognitiaTeamFromJson(teamJson: String) =
+        Gson().fromJson(teamJson, CognitiaTeam::class.java)
 }

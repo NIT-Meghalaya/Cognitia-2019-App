@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 navController.navigate(R.id.eventCategoriesFragment)
             }
             R.id.team -> {
-                navController.navigate(R.id.teamMembersFragment)
+                navController.navigate(R.id.teamsFragment)
             }
             R.id.contact ->{
                 navController.navigate(R.id.contactUsFragment)
@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.schedule -> {
                 navController.navigate(R.id.scheduleFragment)
             }
-            R.id.sponsors ->{
-                navController.navigate(R.id.sponsorFragment )
+            R.id.sponsors -> {
+                navController.navigate(R.id.sponsorFragment)
             }
         }
 

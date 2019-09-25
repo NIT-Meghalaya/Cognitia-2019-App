@@ -13,14 +13,19 @@ import nitmeghalaya.cognitia2019.screens.BaseViewHolder
 
 class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) {
 
+    private lateinit var teamMemberItem: TeamMember
+
     override fun bind(item: TeamMember) {
+
+        teamMemberItem = item
+
         itemView.apply {
             imageView.load(item.image) {
                 transformations(RoundedCornersTransformation(dipToPixels(context,4)))
             }
-            nameTV.text = item.name
-            postTV.text = item.position
-            emailTV.text = item.email
+//            nameTV.text = item.name
+//            postTV.text = item.position
+//            emailTV.text = item.email
         }
     }
 
@@ -31,4 +36,6 @@ class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) 
         return converted
 
     }
+
+    fun getTeamMemberItem(): TeamMember = teamMemberItem
 }
