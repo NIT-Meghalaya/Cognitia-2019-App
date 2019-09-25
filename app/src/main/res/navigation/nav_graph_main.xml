@@ -70,4 +70,8 @@
             android:id="@+id/action_teamsFragment_to_teamMembersFragment"
             app:destination="@+id/teamMembersFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/sponsorFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.sponsors.SponsorFragment"
+        android:label="SponsorFragment" />
 </navigation>
