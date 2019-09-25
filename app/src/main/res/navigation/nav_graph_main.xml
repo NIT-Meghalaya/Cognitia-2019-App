@@ -58,4 +58,8 @@
         android:name="nitmeghalaya.cognitia2019.screens.contactus.ContactUsFragment"
         android:label="fragment_contact_us"
         tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/sponsorFragment"
+        android:name="nitmeghalaya.cognitia2019.screens.sponsors.SponsorFragment"
+        android:label="SponsorFragment" />
 </navigation>
