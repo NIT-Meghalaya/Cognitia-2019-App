@@ -11,6 +11,8 @@ import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.screens.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+
+
 class TeamsFragment: BaseFragment() {
 
     private val viewModel: TeamsViewModel by viewModel()
@@ -29,6 +31,5 @@ class TeamsFragment: BaseFragment() {
 
         return view
     }
-
 
 }

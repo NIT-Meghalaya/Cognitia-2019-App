@@ -1,11 +1,10 @@
 package nitmeghalaya.cognitia2019.screens.teammembers
 
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
+import androidx.navigation.fragment.navArgs
 import com.azoft.carousellayoutmanager.CarouselLayoutManager
 import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener
 import com.azoft.carousellayoutmanager.CenterScrollListener
@@ -18,27 +17,28 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class TeamMembersFragment : BaseFragment() {
 
     private val viewModel: TeamMembersViewModel by viewModel()
+    private val args: TeamMembersFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_team_members, container, false)
-        setActionbarTitle("Team Members")
 
-        val layoutManager = CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true)
+        setActionbarTitle(viewModel.getTeamName(args.teamJson))
+
+        val layoutManager = CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,false)
         layoutManager.setPostLayoutListener(CarouselZoomPostLayoutListener())
-        view.recyclerView.layoutManager = layoutManager
-        view.recyclerView.setHasFixedSize(true)
+        view.apply {
+            recyclerView.apply {
+                this.layoutManager = layoutManager
+                setHasFixedSize(true)
+                adapter = TeamMemberRecyclerViewAdapter(viewModel.getTeamMembersList(args.teamJson))
+                addOnScrollListener(CenterScrollListener())
+            }
+        }
 
-        viewModel.getTeamMembers().observe(this, Observer {
-            view.recyclerView.adapter = TeamMemberRecyclerViewAdapter(it)
-        })
-
-        view.recyclerView.addOnScrollListener(CenterScrollListener())
         return view
     }
-
-
 }

@@ -21,5 +21,4 @@ class TeamsViewModel(private val firestoreRepository: FirestoreRepository): View
 
         return teamsLiveData
     }
-
 }
