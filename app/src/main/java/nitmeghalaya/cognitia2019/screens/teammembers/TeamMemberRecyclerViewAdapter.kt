@@ -13,7 +13,7 @@ class TeamMemberRecyclerViewAdapter(private val teamMembers: ArrayList<TeamMembe
         TeamMemberViewHolder(
             LayoutInflater
                 .from(parent.context)
-                .inflate(R.layout.item_team_member, parent, false)
+                .inflate(R.layout.item_team_member_new, parent, false)
         )
 
 
