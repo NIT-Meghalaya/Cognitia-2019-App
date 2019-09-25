@@ -51,9 +51,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.contact ->{
                 navController.navigate(R.id.contactUsFragment)
             }
-            R.id.schedule -> {
-                navController.navigate(R.id.scheduleFragment)
-            }
             R.id.sponsors -> {
                 navController.navigate(R.id.sponsorFragment)
             }

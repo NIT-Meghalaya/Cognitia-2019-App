@@ -8,10 +8,6 @@
             android:title="@string/events"/>
 
         <item
-            android:id="@+id/schedule"
-            android:title="@string/schedule"/>
-
-        <item
             android:id="@+id/team"
             android:title="@string/team"/>
 
