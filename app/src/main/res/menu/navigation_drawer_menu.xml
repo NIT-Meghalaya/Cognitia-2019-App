@@ -23,7 +23,35 @@
             android:id="@+id/contact"
             android:title="@string/contact"/>
 
-
-
     </group>
+
+    <item android:title="Contact us" >
+        <menu>
+            <item
+                android:id="@+id/link_website"
+                android:title="Website"
+                android:icon="@drawable/website"/>
+            <item
+                android:id="@+id/link_facebook"
+                android:title="Facebook"
+                android:icon="@drawable/facebook_icon" />
+            <item
+                android:id="@+id/link_instagram"
+                android:title="Instagram"
+                android:icon="@drawable/instagram" />
+            <item
+                android:id="@+id/link_twitter"
+                android:title="Twitter"
+                android:icon="@drawable/twitter"
+                android:visible="false"/>
+            <item
+                android:id="@+id/link_youtube"
+                android:title="Youtube"
+                android:icon="@drawable/youtube" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+        </menu>
+    </item>
 </menu>
