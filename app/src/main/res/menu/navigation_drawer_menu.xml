@@ -25,7 +25,7 @@
 
     </group>
 
-    <item android:title="Contact us" >
+    <item android:title="Follow us" >
         <menu>
             <item
                 android:id="@+id/link_website"
