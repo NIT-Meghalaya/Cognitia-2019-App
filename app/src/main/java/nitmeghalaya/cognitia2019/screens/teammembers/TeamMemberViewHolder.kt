@@ -13,7 +13,7 @@ import nitmeghalaya.cognitia2019.screens.BaseViewHolder
 
 class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) {
 
-    lateinit var teamMemberItem: TeamMember
+    private lateinit var teamMemberItem: TeamMember
 
     override fun bind(item: TeamMember) {
 
@@ -36,4 +36,6 @@ class TeamMemberViewHolder(itemView: View):BaseViewHolder<TeamMember>(itemView) 
         return converted
 
     }
+
+    fun getTeamMemberItem(): TeamMember = teamMemberItem
 }

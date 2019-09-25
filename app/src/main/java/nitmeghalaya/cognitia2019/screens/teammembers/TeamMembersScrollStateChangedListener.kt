@@ -20,7 +20,7 @@ class TeamMembersScrollStateChangedListener(
     }
 
     override fun onScrollEnd(currentItemHolder: TeamMemberViewHolder, adapterPosition: Int) {
-        val teamMember = currentItemHolder.teamMemberItem
+        val teamMember = currentItemHolder.getTeamMemberItem()
 
         teamMember.apply {
             nameTV.text = teamMember.name
