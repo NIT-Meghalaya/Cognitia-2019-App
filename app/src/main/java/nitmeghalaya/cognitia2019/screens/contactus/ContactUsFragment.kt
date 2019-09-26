@@ -69,6 +69,22 @@ class ContactUsFragment : BaseFragment() {
         btnShare.setOnClickListener {
             shareCard(view.cardView)
         }
+
+        emailGSTech1.setOnClickListener {
+            createEmailIntent(emailGSTech1.text.toString())
+        }
+
+        emailGSTech2.setOnClickListener {
+            createEmailIntent(emailGSTech2.text.toString())
+        }
+
+        phoneGSTech1.setOnClickListener {
+            createPhoneIntent(phoneGSTech1.text.toString())
+        }
+
+        phoneGSTech2.setOnClickListener {
+            createPhoneIntent(phoneGSTech2.text.toString())
+        }
     }
 
 
@@ -98,6 +114,15 @@ class ContactUsFragment : BaseFragment() {
         } catch (e: FileNotFoundException) {
             e.printStackTrace()
         }
+    }
 
+    private fun createEmailIntent(email: String) {
+        val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", email, null))
+        startActivity(Intent.createChooser(intent, "Choose an Email client :"))
+    }
+
+    private fun createPhoneIntent(phone: String) {
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null))
+        startActivity(intent)
     }
 }

@@ -76,6 +76,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             }
+            R.id.link_github-> {
+                val uri = Uri.parse("https://github.com/NIT-Meghalaya/Cognitia-2019-App")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
         }
 
         return true

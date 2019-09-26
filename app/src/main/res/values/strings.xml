@@ -4,10 +4,10 @@
     <string name="events">Events</string>
     <string name="schedule">Schedule</string>
     <string name="sponsors">Sponsors</string>
-    <string name="contact">Contact</string>
+    <string name="contact">Contact Us</string>
     <string name="action_share">Share</string>
     <string name="action_explore">Explore</string>
-    <string name="team">Team</string>
+    <string name="team">Our Team</string>
     <string name="cognitia_emoji">🇨 🇴 🇬 🇳 🇮 🇹 🇮 🇦</string>
 
     <string name="slide_1_title">TECHNICAL EVENTS</string>
@@ -17,7 +17,7 @@
     <string name="slide_2_desc">The five departments of NITM - CSE, ECE, EEE, ME and CE have in store for a wide range of interesting events that are both challenging and fun.</string>
 
     <string name="slide_0_title">WELCOME</string>
-    <string name="slide_0_desc">To NIT Meghalaya\'s Annual Tech Fest COGNITIA 2018</string>
+    <string name="slide_0_desc">To NIT Meghalaya\'s Annual Tech Fest COGNITIA 2019</string>
 
     <string name="slide_3_title">ALL SET!</string>
     <string name="slide_3_desc">Brace yourself to get a feel of Meghalaya\'s largest tech fest</string>
@@ -25,6 +25,7 @@
 
     <string-array name="attribution">
         <item>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
-        <item>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+        <item>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
     </string-array>
 </resources>

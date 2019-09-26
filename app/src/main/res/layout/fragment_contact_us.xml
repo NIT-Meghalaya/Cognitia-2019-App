@@ -104,12 +104,14 @@
                 android:textSize="@dimen/_14sdp" />
 
             <TextView
+                android:id="@+id/phoneGSTech1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9113143598"
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/emailGSTech1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="b16me023@nitm.ac.in"
@@ -152,12 +154,14 @@
                 android:textSize="@dimen/_14sdp" />
 
             <TextView
+                android:id="@+id/phoneGSTech2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8707012402"
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/emailGSTech2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="b17ce028@nitm.ac.in"
