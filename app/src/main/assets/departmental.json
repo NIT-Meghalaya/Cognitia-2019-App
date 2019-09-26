@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="base">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="google" content="notranslate">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+	
+	<meta name='description' content="Sourcegraph is a web-based code search and navigation tool for dev teams. Search, navigate, and review code. Find answers." />
+		
+	
+	<title>departmental.json - NIT-Meghalaya/Cognitia-2018-App - Sourcegraph</title>
+	<link rel="stylesheet" href="/.assets/styles/app.bundle.css?e7f5cceb03739c8372f829d46d13581e">
+	<link id='sourcegraph-chrome-webstore-item' rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack">
+	<link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Sourcegraph Search">
+	<script ignore-csp>
+		window.context = {"externalURL":"https://sourcegraph.com","xhrHeaders":{"X-Csrf-Token":"6Qxob4G+MkIU2qRCikIJ4VsC4ofkiPNUunBd0awYh+W+JYyGfObG4t1yyihQso4ZBtnMS2bdtN6n+uFyFdcEbQ==","X-Requested-With":"Sourcegraph","x-sourcegraph-client":"https://sourcegraph.com"},"csrfToken":"6Qxob4G+MkIU2qRCikIJ4VsC4ofkiPNUunBd0awYh+W+JYyGfObG4t1yyihQso4ZBtnMS2bdtN6n+uFyFdcEbQ==","userAgentIsBot":false,"assetsRoot":"/.assets","version":"43673_2019-09-25_fea765a","isAuthenticatedUser":false,"sentryDSN":"https://ae2f74442b154faf90b5ff0f7cd1c618@sentry.io/1391511","siteID":"SourcegraphWeb","siteGQLID":"U2l0ZToic2l0ZSI=","debug":false,"showOnboarding":false,"emailEnabled":true,"critical":{"auth.public":true,"update.channel":"release"},"likelyDockerOnMac":false,"needServerRestart":false,"deployType":"cluster","sourcegraphDotComMode":true,"billingPublishableKey":"pk_live_1LPIDxv3bZH5wTv9NRcu9Sik","accessTokensAllow":"all-users-create","allowSignup":true,"resetPasswordEnabled":true,"authProviders":[{"isBuiltin":true,"displayName":"Builtin username-password authentication","authenticationURL":""},{"isBuiltin":false,"displayName":"GitHub","authenticationURL":"/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F"}],"branding":null,"experimentalFeatures":{}}
+		window.pageError =  null 
+	</script>
+	
+</head>
+
+<body>
+	
+	<div id="root"></div>
+	<noscript>
+		<p>Sourcegraph is a web-based code search and navigation tool for dev teams. Search, navigate, and review code. Find answers.</p>
+
+		<br>
+		<br>
+		<br>
+		You need to enable JavaScript to run this app.
+	</noscript>
+	<script src="/.assets/scripts/app.bundle.js?cd01ea1fa7ac36c1ca13cce54e82af61"></script>
+	
+</body>
+
+
+<style ignore-csp>
+	 
+	@supports (padding: max(0px)) {
+
+		.global-navbar,
+		.main-page .row,
+		.search-row {
+			padding-left: max(12px, env(safe-area-inset-left));
+			padding-right: max(12px, env(safe-area-inset-right));
+		}
+
+		.modal-open .row .row {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	}
+</style>
+
+
+</html>
