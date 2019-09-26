@@ -29,7 +29,12 @@ class TeamMembersViewModel : ViewModel() {
                 it.position = "Member"
             }
 
+            generalsecretary.forEach {
+                it.position = "General Secretary"
+            }
+
             teamMembers.apply {
+                addAll(generalsecretary)
                 addAll(coordinators)
                 addAll(cocoordinators)
                 addAll(members)
