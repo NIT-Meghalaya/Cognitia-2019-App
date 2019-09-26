@@ -21,7 +21,7 @@ class EventDetailTeamFragment : Fragment() {
 
     companion object {
 
-        private const val TEAM = "teams"
+        private const val TEAM = "team"
 
         fun newInstance(team: String): EventDetailTeamFragment {
             val fragment = EventDetailTeamFragment()
