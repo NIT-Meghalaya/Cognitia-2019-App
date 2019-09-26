@@ -41,10 +41,6 @@
                 android:icon="@drawable/twitter"
                 android:visible="false"/>
             <item
-                android:id="@+id/link_youtube"
-                android:title="Youtube"
-                android:icon="@drawable/youtube" />
-            <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/feedback"
                 android:title="Feedback" />

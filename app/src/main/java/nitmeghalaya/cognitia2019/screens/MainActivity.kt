@@ -76,11 +76,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             }
-            R.id.link_youtube-> {
-                val uri = Uri.parse("http://www.cognitia.co.in/")
-                val intent = Intent(Intent.ACTION_VIEW, uri)
-                startActivity(intent)
-            }
         }
 
         return true
