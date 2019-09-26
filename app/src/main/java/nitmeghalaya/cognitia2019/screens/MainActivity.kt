@@ -1,5 +1,7 @@
 package nitmeghalaya.cognitia2019.screens
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -53,6 +55,26 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.sponsors -> {
                 navController.navigate(R.id.sponsorFragment)
+            }
+            R.id.link_website -> {
+                val uri = Uri.parse("http://www.cognitia.co.in/")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
+            R.id.link_facebook-> {
+                val uri = Uri.parse("https://www.facebook.com/NITMcognitia/")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
+            R.id.link_instagram-> {
+                val uri = Uri.parse("https://www.instagram.com/cognitia_nitm/?igshid=cgv6r2lamk9c")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
+            R.id.link_twitter-> {
+                val uri = Uri.parse("http://www.cognitia.co.in/")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
             }
         }
 
