@@ -4,12 +4,13 @@ package nitmeghalaya.cognitia2019.screens.contactus
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import coil.api.load
+import coil.transform.RoundedCornersTransformation
 import kotlinx.android.synthetic.main.fragment_contact_us.*
-
 import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.screens.BaseFragment
 
@@ -30,6 +31,14 @@ class ContactUsFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        gsTech1ImageView.load("https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/Deepak.jpg?alt=media&token=58395280-a62b-4d49-be7a-295ecaccc2d3") {
+            transformations(RoundedCornersTransformation(20.0f))
+        }
+
+        gsTech2ImageView.load("https://firebasestorage.googleapis.com/v0/b/cognitia-2019.appspot.com/o/Priyesh.jpg?alt=media&token=da51e1b3-b8c5-42d2-b396-923c5cd2c7d1") {
+            transformations(RoundedCornersTransformation(20.0f))
+        }
 
         btnEmail.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "cognitia@nitm.ac.in", null))

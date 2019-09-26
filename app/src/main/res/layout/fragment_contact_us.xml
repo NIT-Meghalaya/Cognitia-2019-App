@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.material.card.MaterialCardView
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +15,6 @@
         android:layout_height="match_parent"
         tools:context=".screens.contactus.ContactUsFragment">
 
-
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="0dp"
@@ -24,6 +24,7 @@
             android:paddingTop="@dimen/_40sdp"
             android:scaleX="1.5"
             android:scaleY="1.5"
+            android:translationY="-20dp"
             android:src="@drawable/cognitia_logo"
             app:layout_constraintDimensionRatio="3:1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,37 +32,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/contactUsTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="32dp"
-            android:paddingTop="@dimen/_10sdp"
-            android:text="Contact Us"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/_20sdp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/textView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-        <TextView
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp"
             android:layout_marginEnd="15dp"
+            android:layout_marginBottom="@dimen/_30sdp"
             android:text="Bijni Complex, Laitumkhrah, Shillong, Meghalaya 793003"
-            android:textColor="@color/darkWhite"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/iconsLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/loading_data_animation"
-            app:layout_constraintTop_toBottomOf="@id/contactUsTV" />
+            app:layout_constraintStart_toEndOf="@+id/loading_data_animation" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/loading_data_animation"
@@ -69,21 +53,120 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
             android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/iconsLayout"
             app:layout_constraintEnd_toStartOf="@+id/textView2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/contactUsTV"
             app:lottie_autoPlay="true"
             app:lottie_fileName="location.json"
             app:lottie_loop="true" />
 
+        <ImageView
+            android:id="@+id/gsTech1ImageView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:padding="@dimen/_10sdp"
+            tools:src="@tools:sample/avatars"
+            app:layout_constraintTop_toTopOf="@id/gsTech1Layout"
+            app:layout_constraintBottom_toBottomOf="@id/gsTech1Layout"
+            app:layout_constraintStart_toStartOf="parent"/>
+
         <LinearLayout
+            android:id="@+id/gsTech1Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/gsTech2Layout"
+            app:layout_constraintStart_toEndOf="@id/gsTech1ImageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GS Technical-1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deepak Sah"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9113143598"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b16me023@nitm.ac.in"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gsTech2ImageView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:padding="@dimen/_10sdp"
+            tools:src="@tools:sample/avatars"
+            app:layout_constraintTop_toTopOf="@id/gsTech2Layout"
+            app:layout_constraintBottom_toBottomOf="@id/gsTech2Layout"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/gsTech2Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/loading_data_animation"
+            app:layout_constraintStart_toEndOf="@id/gsTech2ImageView"
+            app:layout_constraintTop_toBottomOf="@+id/gsTech1Layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GS Technical-2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priyesh Singh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8707012402"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" b17ce028@nitm.ac.in"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iconsLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginBottom="32dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -105,11 +188,11 @@
                 app:srcCompat="@drawable/ic_www" />
 
             <ImageView
-            android:id="@+id/btnFacebook"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:background="@color/transparent"
-            app:srcCompat="@drawable/ic_facebook" />
+                android:id="@+id/btnFacebook"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_facebook" />
 
             <ImageView
                 android:id="@+id/btnInstagram"
