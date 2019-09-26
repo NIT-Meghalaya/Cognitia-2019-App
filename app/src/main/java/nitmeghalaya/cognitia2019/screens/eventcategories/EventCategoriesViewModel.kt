@@ -15,7 +15,8 @@ class EventCategoriesViewModel: ViewModel() {
         eventCategories.add(EventCategory("ECE Departmental Events", R.drawable.ece))
         eventCategories.add(EventCategory("EEE Departmental Events", R.drawable.electrical))
         eventCategories.add(EventCategory("ME Departmental Events", R.drawable.mechanical))
-        eventCategories.add(EventCategory("Other events", R.drawable.gaming))
+        eventCategories.add(EventCategory("Gaming Events", R.drawable.gaming))
+        eventCategories.add(EventCategory("New Events", R.drawable.gaming))
 
         return eventCategories
     }
