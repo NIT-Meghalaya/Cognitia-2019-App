@@ -1,22 +1,25 @@
 package nitmeghalaya.cognitia2019.screens.contactus
 
-
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.core.content.FileProvider
 import coil.api.load
 import coil.transform.RoundedCornersTransformation
+import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.fragment_contact_us.*
+import kotlinx.android.synthetic.main.fragment_contact_us.view.*
 import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.screens.BaseFragment
+import java.io.File
+import java.io.FileNotFoundException
+import java.io.FileOutputStream
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class ContactUsFragment : BaseFragment() {
 
     override fun onCreateView(
@@ -62,7 +65,39 @@ class ContactUsFragment : BaseFragment() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        btnShare.setOnClickListener {
+            shareCard(view.cardView)
+        }
     }
 
 
+    private fun shareCard(card: MaterialCardView) {
+        card.isDrawingCacheEnabled = true
+        card.buildDrawingCache()
+        val bitmap = card.drawingCache
+
+        try {
+            val cachePath = File(card.context.cacheDir, "images")
+            cachePath.mkdirs() // don't forget to make the directory
+            val stream = FileOutputStream("$cachePath/card_image.png") // overwrites this image every time
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            stream.close()
+
+            val imagePath = File(card.context.cacheDir, "images")
+            val newFile = File(imagePath, "card_image.png")
+
+            val uri = FileProvider.getUriForFile(card.context, "nitmeghalaya.cognitia2019", newFile)
+
+            val shareIntent = Intent()
+            shareIntent.action = Intent.ACTION_SEND
+            shareIntent.putExtra(Intent.EXTRA_STREAM, uri)
+            shareIntent.type = "image/jpeg"
+            context!!.startActivity(Intent.createChooser(shareIntent, "Share"))
+
+        } catch (e: FileNotFoundException) {
+            e.printStackTrace()
+        }
+
+    }
 }

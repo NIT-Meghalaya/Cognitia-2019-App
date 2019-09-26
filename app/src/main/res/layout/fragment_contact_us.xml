@@ -7,8 +7,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="@dimen/_10sdp"
     app:cardCornerRadius="@dimen/_10sdp"
-    android:layout_margin="@dimen/_16sdp"
-    app:cardBackgroundColor="@color/black">
+    android:layout_marginStart="@dimen/_16sdp"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_16sdp"
+    app:cardBackgroundColor="@color/black"
+    android:id="@+id/cardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -68,7 +71,7 @@
             android:id="@+id/gsTech1ImageView"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_100sdp"
-            android:padding="@dimen/_10sdp"
+            android:padding="@dimen/_14sdp"
             tools:src="@tools:sample/avatars"
             app:layout_constraintTop_toTopOf="@id/gsTech1Layout"
             app:layout_constraintBottom_toBottomOf="@id/gsTech1Layout"
@@ -89,14 +92,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GS Technical-1"
+                android:text="Deepak Sah"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16sdp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deepak Sah"
+                android:text="GS Technical-1"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
@@ -117,7 +120,7 @@
             android:id="@+id/gsTech2ImageView"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_100sdp"
-            android:padding="@dimen/_10sdp"
+            android:padding="@dimen/_14sdp"
             tools:src="@tools:sample/avatars"
             app:layout_constraintTop_toTopOf="@id/gsTech2Layout"
             app:layout_constraintBottom_toBottomOf="@id/gsTech2Layout"
@@ -137,16 +140,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GS Technical-2"
+                android:text="Priyesh Singh"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16sdp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Priyesh Singh"
+                android:text="GS Technical-2"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_16sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -157,7 +160,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" b17ce028@nitm.ac.in"
+                android:text="b17ce028@nitm.ac.in"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -200,6 +203,14 @@
                 android:layout_height="@dimen/_30sdp"
                 android:background="@color/transparent"
                 app:srcCompat="@drawable/ic_instagram" />
+
+            <ImageView
+                android:id="@+id/btnShare"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@color/transparent"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_share" />
 
         </LinearLayout>
 
