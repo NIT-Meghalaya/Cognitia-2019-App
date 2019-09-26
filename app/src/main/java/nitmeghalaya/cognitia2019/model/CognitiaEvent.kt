@@ -9,7 +9,7 @@ data class CognitiaEvent(
     val teamguidelines: String = "",
     val category: String = "1",
     val image: String = "",
-    val team: String = ""
+    val teams: String = ""
 ) {
     companion object {
         const val DESCRIPTION = "Description"

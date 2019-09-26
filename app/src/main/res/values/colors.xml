@@ -10,7 +10,7 @@
     <color name="darkerWhite">#bfbfbf</color>
     <color name="transparent">#00000000</color>
 
-    <color name="buttonBackground">#C8E6C9</color>
+    <color name="buttonBackground">#D7FFD8</color>
     <color name="imageShadowColor">#7080A0</color>
     <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
