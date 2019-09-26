@@ -92,4 +92,7 @@ dependencies {
 
     //Firebase cloud messaging
     implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    //IntroSlider
+    implementation 'com.github.AppIntro:AppIntro:5.1.0'
 }

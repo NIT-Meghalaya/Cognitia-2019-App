@@ -12,24 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".screens.introslider.IntroSliderActivity"></activity>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_notification" />
-        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
         <activity
-            android:name="nitmeghalaya.cognitia2019.screens.splash.SplashScreenActivity"
+            android:name=".screens.splash.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".screens.MainActivity" android:theme="@style/AppTheme">
-        </activity>
+        <activity
+            android:name=".screens.MainActivity"
+            android:theme="@style/AppTheme"></activity>
 
         <service android:name=".services.MyFirebaseMessagingService">
             <intent-filter>
@@ -40,13 +43,12 @@
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="nitmeghalaya.cognitia2019"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
         </provider>
-
     </application>
 
 </manifest>
