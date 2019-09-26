@@ -1,9 +1,12 @@
 package nitmeghalaya.cognitia2019.screens.introslider
 
+import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import androidx.fragment.app.Fragment
 import com.github.paolorotolo.appintro.AppIntro2
 import nitmeghalaya.cognitia2019.R
+import nitmeghalaya.cognitia2019.screens.MainActivity
 
 class IntroSliderActivity : AppIntro2() {
 
@@ -22,7 +25,12 @@ class IntroSliderActivity : AppIntro2() {
     }
 
     override fun onDonePressed(currentFragment: Fragment) {
-        // Do something when users tap on Done button.
+        val e = PreferenceManager
+            .getDefaultSharedPreferences(baseContext).edit()
+        e.putBoolean("firstStart", false)
+        e.apply()
+        startActivity(Intent(this, MainActivity::class.java))
+
         super.onDonePressed(currentFragment)
         finish()
     }
