@@ -21,4 +21,10 @@
 
     <string name="slide_3_title">ALL SET!</string>
     <string name="slide_3_desc">Brace yourself to get a feel of Meghalaya\'s largest tech fest</string>
+    <string name="register">Register</string>
+
+    <string-array name="attribution">
+        <item>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+
+    </string-array>
 </resources>

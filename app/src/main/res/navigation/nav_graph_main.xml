@@ -42,6 +42,9 @@
         <argument
             android:name="eventImage"
             app:argType="string" />
+        <argument
+            android:name="registrationLink"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/teamMembersFragment"
