@@ -20,6 +20,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@color/black"
             tools:src="@drawable/cognitia_logo"
             android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="16:9"

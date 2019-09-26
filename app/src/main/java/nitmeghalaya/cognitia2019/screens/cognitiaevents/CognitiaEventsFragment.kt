@@ -25,7 +25,7 @@ class CognitiaEventsFragment : BaseFragment() {
 
         setActionbarTitle(args.eventsCategory)
         showLoadingAnimation()
-        val category = if(args.eventsCategory == "Technical events") "robotics" else args.eventsCategory
+        val category = if(args.eventsCategory == "Technical Events") "robotics" else args.eventsCategory
 
         viewModel.getCognitiaEventList(category).observe(this, Observer {
             view.recyclerView.adapter = CognitiaEventsRecyclerViewAdapter(this, it)
