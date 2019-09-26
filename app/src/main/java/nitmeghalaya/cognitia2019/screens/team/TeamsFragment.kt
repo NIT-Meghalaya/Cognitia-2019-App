@@ -25,8 +25,10 @@ class TeamsFragment: BaseFragment() {
 
         setActionbarTitle("Teams")
 
+        showLoadingAnimation()
         viewModel.getTeams().observe(this, Observer {
             view.recyclerView.adapter = TeamsRecyclerViewAdapter(it)
+            hideLoadingAnimation()
         })
 
         return view
