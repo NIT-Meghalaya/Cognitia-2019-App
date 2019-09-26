@@ -8,7 +8,7 @@
     android:id="@+id/coordinator">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/event_appbar"
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/colorPrimary"
@@ -60,11 +60,25 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabRegister"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_register"
+            app:iconSize="@dimen/_20sdp"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="@string/register"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_10sdp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

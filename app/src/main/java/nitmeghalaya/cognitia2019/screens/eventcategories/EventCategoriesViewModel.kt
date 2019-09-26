@@ -9,14 +9,14 @@ class EventCategoriesViewModel: ViewModel() {
     fun getEventCategories(): ArrayList<EventCategory> {
         val eventCategories = arrayListOf<EventCategory>()
 
-        eventCategories.add(EventCategory("Technical events", R.drawable.technical))
+        eventCategories.add(EventCategory("Technical Events", R.drawable.technical))
+        eventCategories.add(EventCategory("New Events", R.drawable.new_events))
         eventCategories.add(EventCategory("CE Departmental Events", R.drawable.civil))
         eventCategories.add(EventCategory("CSE Departmental Events", R.drawable.cse))
         eventCategories.add(EventCategory("ECE Departmental Events", R.drawable.ece))
         eventCategories.add(EventCategory("EEE Departmental Events", R.drawable.electrical))
         eventCategories.add(EventCategory("ME Departmental Events", R.drawable.mechanical))
-        eventCategories.add(EventCategory("Gaming Events", R.drawable.gaming))
-        eventCategories.add(EventCategory("New Events", R.drawable.gaming))
+        eventCategories.add(EventCategory("Gaming", R.drawable.gaming))
 
         return eventCategories
     }

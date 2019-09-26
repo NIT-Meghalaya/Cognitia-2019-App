@@ -10,7 +10,7 @@ data class CognitiaEvent(
     val category: String = "1",
     val image: String = "",
     val team: String = "",
-    val registrationLink: String = ""
+    val registrationLink: String = "http://www.cognitia.co.in/registration/departmental"
 ) {
     companion object {
         const val DESCRIPTION = "Description"
