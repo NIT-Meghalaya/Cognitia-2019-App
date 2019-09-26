@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/slide_2_title"
+        android:textColor="@color/darkWhite"
         style="@style/IntroSliderTitle" />
 
     <com.airbnb.lottie.LottieAnimationView
@@ -18,12 +19,13 @@
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="animation_3.json"
+        app:lottie_fileName="animation_2.json"
         android:layout_gravity="center"
+        app:lottie_speed="2"
         app:lottie_loop="true" android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_32sdp"/>
 
     <TextView
         android:id="@+id/slideDescriptiom"
@@ -34,6 +36,6 @@
         android:textAlignment="center"
         android:text="@string/slide_2_desc"
         android:textSize="18sp"
-        android:textColor="#ffffff" />
+        android:textColor="@color/darkWhite" />
 
 </LinearLayout>

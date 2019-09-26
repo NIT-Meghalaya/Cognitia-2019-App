@@ -18,7 +18,7 @@ class IntroSliderActivity : AppIntro2() {
         addSlide(SampleSlide.newInstance(R.layout.slide_1))
         addSlide(SampleSlide.newInstance(R.layout.slide_2))
         addSlide(SampleSlide.newInstance(R.layout.slide_3))
-        addSlide(SampleSlide.newInstance(R.layout.slide_4))
+//        addSlide(SampleSlide.newInstance(R.layout.slide_4))
 
         showStatusBar(true)
         showSkipButton(false)
