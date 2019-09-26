@@ -5,6 +5,7 @@
 //Firestore
 val EVENTS = "events"
 val TEAMS = "Teams"
+val SPONSORS = "sponsors"
 
 //FCM
 const val FCM_NOTIFICATION_CHANNEL_ID = "Push Notifications"

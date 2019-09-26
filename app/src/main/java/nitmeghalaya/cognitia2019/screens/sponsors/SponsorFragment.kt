@@ -2,18 +2,18 @@ package nitmeghalaya.cognitia2019.screens.sponsors
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.lifecycle.Observer
+import kotlinx.android.synthetic.main.fragment_sponsor.view.*
 import nitmeghalaya.cognitia2019.R
 import nitmeghalaya.cognitia2019.screens.BaseFragment
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-/**
- * A simple [Fragment] subclass.
- */
 class SponsorFragment : BaseFragment() {
+
+    private val viewModel: SponsorViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,8 +21,13 @@ class SponsorFragment : BaseFragment() {
     ): View? {
         // Inflate the layout for this fragment
         setActionbarTitle("Sponsors")
-        return inflater.inflate(R.layout.fragment_sponsor, container, false)
+        val view = inflater.inflate(R.layout.fragment_sponsor, container, false)
 
+        viewModel.getSponsors().observe(this, Observer {
+            view.recyclerView.adapter = SponsorRecyclerViewAdapter(it)
+        })
+
+        return view
     }
 
 

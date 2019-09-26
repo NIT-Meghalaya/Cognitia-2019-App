@@ -1,6 +1,7 @@
 package nitmeghalaya.cognitia2019.repository
 
 import EVENTS
+import SPONSORS
 import TEAMS
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
@@ -15,4 +16,6 @@ class FirestoreRepository {
     fun getTeamMembers(teamName: String) = db.collection(TEAMS).document(teamName).get()
 
     fun getTeams() = db.collection(TEAMS).get()
+
+    fun getSponsors() = db.collection(SPONSORS).get()
 }
