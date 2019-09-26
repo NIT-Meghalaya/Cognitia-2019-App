@@ -13,4 +13,5 @@
     <color name="buttonBackground">#D7FFD8</color>
     <color name="imageShadowColor">#7080A0</color>
     <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="card_foreground_gradient_black">#D8000000</color>
 </resources>

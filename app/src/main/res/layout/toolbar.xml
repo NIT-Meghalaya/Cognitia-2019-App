@@ -6,4 +6,6 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/darkWhite"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    app:layout_constraintTop_toTopOf="parent" />
+    app:layout_constraintTop_toTopOf="parent" >
+
+</androidx.appcompat.widget.Toolbar>
