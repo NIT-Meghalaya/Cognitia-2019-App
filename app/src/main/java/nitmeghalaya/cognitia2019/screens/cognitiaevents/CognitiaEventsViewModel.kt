@@ -8,6 +8,7 @@ import com.google.gson.Gson
 import nitmeghalaya.cognitia2019.model.CognitiaEvent
 import nitmeghalaya.cognitia2019.repository.FirestoreRepository
 
+
 class CognitiaEventsViewModel(private val firestoreRepository: FirestoreRepository): ViewModel() {
 
     fun getCognitiaEventList(categoryName: String): LiveData<ArrayList<CognitiaEvent>> {

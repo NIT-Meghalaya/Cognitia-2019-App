@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Cognitia 2019</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="events">Events</string>
     <string name="schedule">Schedule</string>
@@ -10,4 +8,5 @@
     <string name="action_share">Share</string>
     <string name="action_explore">Explore</string>
     <string name="team">Team</string>
+    <string name="cognitia_emoji">🇨 🇴 🇬 🇳 🇮 🇹 🇮 🇦</string>
 </resources>
