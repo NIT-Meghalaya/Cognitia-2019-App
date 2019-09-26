@@ -12,4 +12,5 @@
 
     <color name="buttonBackground">#C8E6C9</color>
     <color name="imageShadowColor">#7080A0</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
