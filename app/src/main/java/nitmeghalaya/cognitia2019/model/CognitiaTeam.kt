@@ -15,6 +15,9 @@ class CognitiaTeam(
     @get:PropertyName("Members")
     val members: ArrayList<TeamMember> = arrayListOf(),
 
+
+    val generalsecretary: ArrayList<TeamMember> = arrayListOf(),
+
     val team: String = "",
 
     val image: String = ""
