@@ -20,6 +20,7 @@ class SponsorFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        hideLoadingAnimation()
         setActionbarTitle("Sponsors")
         val view = inflater.inflate(R.layout.fragment_sponsor, container, false)
 

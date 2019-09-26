@@ -1,6 +1,8 @@
 package nitmeghalaya.cognitia2019.screens
 
+import android.view.View
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_main.*
 
 abstract class BaseFragment : Fragment() {
 
@@ -14,5 +16,20 @@ abstract class BaseFragment : Fragment() {
 
     fun showActionBar() {
         (activity as MainActivity).supportActionBar?.show()
+    }
+
+    fun hideLoadingAnimation() {
+        (activity as MainActivity).apply {
+            loading_data_animation.pauseAnimation()
+            loading_data_animation.visibility = View.GONE
+        }
+    }
+
+    fun showLoadingAnimation() {
+        (activity as MainActivity).apply {
+            loading_data_animation.playAnimation()
+            nav_host_fragment
+            loading_data_animation.visibility = View.VISIBLE
+        }
     }
 }

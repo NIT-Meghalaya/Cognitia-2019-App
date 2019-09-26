@@ -10,8 +10,9 @@ import androidx.navigation.fragment.navArgs
 import coil.api.load
 import kotlinx.android.synthetic.main.fragment_event_detail.view.*
 import nitmeghalaya.cognitia2019.R
+import nitmeghalaya.cognitia2019.screens.BaseFragment
 
-class EventDetailFragment : Fragment() {
+class EventDetailFragment : BaseFragment() {
 
     private val args: EventDetailFragmentArgs by navArgs()
 
@@ -20,7 +21,7 @@ class EventDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_event_detail, container, false)
-
+        hideLoadingAnimation()
         view.apply {
             viewPager.adapter = EventDescriptionPagerAdapter(args.event, childFragmentManager)
             tabLayout.setupWithViewPager(viewPager)

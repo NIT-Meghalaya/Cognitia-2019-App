@@ -15,6 +15,21 @@
         tools:context=".screens.MainActivity"
         android:backgroundTint="@color/white">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_data_animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            android:translationZ="@dimen/_64sdp"
+            app:lottie_fileName="loading.json"
+            android:layout_gravity="center"
+            app:lottie_loop="true" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar" />

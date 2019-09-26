@@ -24,11 +24,12 @@ class CognitiaEventsFragment : BaseFragment() {
         val view = inflater.inflate(R.layout.fragment_cognitia_events, container, false)
 
         setActionbarTitle(args.eventsCategory)
-
+        showLoadingAnimation()
         val category = if(args.eventsCategory == "Technical events") "robotics" else args.eventsCategory
 
         viewModel.getCognitiaEventList(category).observe(this, Observer {
             view.recyclerView.adapter = CognitiaEventsRecyclerViewAdapter(this, it)
+            hideLoadingAnimation()
         })
 
         return view
