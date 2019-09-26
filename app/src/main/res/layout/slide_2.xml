@@ -18,7 +18,7 @@
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="departmental.json"
+        app:lottie_fileName="animation_3.json"
         android:layout_gravity="center"
         app:lottie_loop="true" android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
