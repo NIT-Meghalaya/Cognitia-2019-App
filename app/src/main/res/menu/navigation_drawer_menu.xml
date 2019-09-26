@@ -5,18 +5,22 @@
 
         <item
             android:id="@+id/events"
+            android:icon="@drawable/ic_events"
             android:title="@string/events"/>
 
         <item
             android:id="@+id/team"
+            android:icon="@drawable/ic_team"
             android:title="@string/team"/>
 
         <item
             android:id="@+id/sponsors"
+            android:icon="@drawable/ic_sponsor"
             android:title="@string/sponsors"/>
 
         <item
             android:id="@+id/contact"
+            android:icon="@drawable/ic_contact"
             android:title="@string/contact"/>
 
     </group>
