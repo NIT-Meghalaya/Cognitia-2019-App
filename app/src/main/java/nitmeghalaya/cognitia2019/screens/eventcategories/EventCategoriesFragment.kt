@@ -16,7 +16,7 @@ class EventCategoriesFragment : BaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_event_categories, container, false)
-        setActionbarTitle("Events")
+        setActionbarTitle(resources.getString(R.string.app_name))
         hideLoadingAnimation()
         view.recyclerView.adapter = EventCategoryRecyclerViewAdapter(viewModel.getEventCategories())
         return view
