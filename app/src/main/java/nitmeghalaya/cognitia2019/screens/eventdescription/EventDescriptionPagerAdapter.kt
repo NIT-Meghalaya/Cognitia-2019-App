@@ -20,11 +20,11 @@ class EventDescriptionPagerAdapter(cognitiaEventJson: String, fm: FragmentManage
                 if(cognitiaEvent.category == TECHNICAL) {
                     EventDetailItemFragment.newInstance(CognitiaEvent.ROBOT_SPECIFICATIONS, cognitiaEvent.robotspecs)
                 } else {
-                    EventDetailTeamFragment.newInstance(cognitiaEvent.teams)
+                    EventDetailTeamFragment.newInstance(cognitiaEvent.team)
                 }
             }
             3 -> {
-                EventDetailTeamFragment.newInstance(cognitiaEvent.teams)
+                EventDetailTeamFragment.newInstance(cognitiaEvent.team)
             } else -> EventDetailTeamFragment()
         }
 

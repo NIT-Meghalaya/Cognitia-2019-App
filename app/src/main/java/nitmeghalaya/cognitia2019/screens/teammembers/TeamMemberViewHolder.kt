@@ -6,7 +6,7 @@ import android.util.TypedValue
 import android.view.View
 import coil.api.load
 import coil.transform.RoundedCornersTransformation
-import kotlinx.android.synthetic.main.item_team_member.view.*
+import kotlinx.android.synthetic.main.item_team_member_new.view.*
 import nitmeghalaya.cognitia2019.model.TeamMember
 import nitmeghalaya.cognitia2019.screens.BaseViewHolder
 
